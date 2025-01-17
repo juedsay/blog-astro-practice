@@ -1,6 +1,4 @@
 ---
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPost.astro';;
 const allPosts = Object.values(import.meta.glob('../pages/posts/*.md', { eager: true }));
@@ -12,19 +10,16 @@ const { pageTitle } = Astro.props;
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} >
-    <title>Astro</title>
+    <title>{pageTitle}</title>
   </head>
 <body>
-    <Header />
     <BaseLayout pageTitle={pageTitle}>
-    <h1>My Astro Site</h1>
     <h1>My Astro Learning Blog</h1>
     <p>This is where I will post about my journey learning Astro.</p>
     <ul>
       {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
     </ul>
-    <BaseLayout />
-    <Footer />
+    </BaseLayout>
     <script>
       import "../scripts/menu.js";
     </script>
