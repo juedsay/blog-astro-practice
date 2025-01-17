@@ -13,7 +13,7 @@
 
 > Project created based on the tutorial to build a Blog with Astro (https://docs.astro.build/en/tutorial/0-introduction/), developed solely for learning purposes.
 
-### 🏠 [Homepage](falta deployar)
+### 🏠 [Homepage](https://github.com/juedsay/blog-astro-practice)
 
 ### ✨ [Demo](falta deployar)
 
