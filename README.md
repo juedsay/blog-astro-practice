@@ -15,7 +15,7 @@
 
 ### 🏠 [Homepage](https://github.com/juedsay/blog-astro-practice)
 
-### ✨ [Demo](falta deployar)
+### ✨ [Demo](https://blog-astro-practice.vercel.app/)
 
 ## Install
 
